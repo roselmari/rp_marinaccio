@@ -22,7 +22,7 @@
 }
 
 .footer{                
-    background-color: #023E8A;
+    background-color: #028a7f;
 }
 
 .icon-white{            /* Arrow icon at bottom of page */
@@ -74,6 +74,10 @@
     border: 8px solid #0ac29d;
 }
 
+.light-green-border {
+    border: 6px solid #91ead8;
+}
+
 .main-page-text {
     background-color: #e1f4f3;
 }
@@ -90,19 +94,35 @@
     align-items: center;  
 }
 
-
-
 .hover-underline-animation {
     display: inline-block;
     position: relative;
     /*color: #0087ca;*/
-  }
+}
 
-  .hover-underline-animationp {
+.hover-underline-animationp {
     display: inline-block;
     position: relative;
-  }
+}
   
+.hover-underline-animationp:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 15px;
+    background-color: #07997c;
+    /*transform-origin: bottom right;*/
+    transition: transform 0.35s ease-out;
+}
+  
+.hover-underline-animationp:hover:after {
+    transform: scaleX(1);
+    /*transform-origin: bottom left;*/
+}
+
 .hover-underline-animation:after {
     content: '';
     position: absolute;
