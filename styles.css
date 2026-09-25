@@ -82,6 +82,10 @@
     background-color: #e1f4f3;
 }
 
+.bottom-margin {
+    margin: 25px 0 75px 0;
+}
+
 /* ----------------- ID CSS ----------------- */
 
 /* -----------------Underline Animation CSS -----------------*/
