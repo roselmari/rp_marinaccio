@@ -86,6 +86,10 @@
     margin: 25px 0 75px 0;
 }
 
+#img-small {
+    width: 50%;
+}
+
 /* ----------------- ID CSS ----------------- */
 
 /* -----------------Underline Animation CSS -----------------*/
@@ -102,6 +106,24 @@
     display: inline-block;
     position: relative;
     /*color: #0087ca;*/
+}
+
+.hover-shadow-animation {
+    transition: box-shadow 0.2s ease-out;
+}
+
+.hover-shadow-animation:hover {
+    transition: ease-in 0.2s;
+    box-shadow: 10px 10px 5px #07997c;
+}
+
+.hover-shadow-animation-left {
+    transition: box-shadow 0.2s ease-out;
+}
+
+.hover-shadow-animation-left:hover {
+    transition: ease-in 0.2s;
+    box-shadow: -10px -10px 5px #07997c;
 }
 
 .hover-underline-animationp {
