@@ -17,6 +17,11 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body class="body">
@@ -59,15 +64,12 @@
         <section class="procedure">
             <div class="container">
                 <br>
-                <div class="text-center">
+                <div class="text-center about-team roboto">
                     <h1>Procedure</h1>
-                    <h2>the steps taken to for each trial</h2>
-
-
                 </div>
 
                 <hr><br>
-                <table class="table table-hover text-center table-light table-bordered border-dark-subtle">
+                <table class="table table-hover text-center table-light table-bordered border-dark-subtle roboto">
                     <thead>
                         <tr class="table-primary">
                             <th>
@@ -82,11 +84,11 @@
                         </tr>
                     </thead>
                     <tbody class="table-group-divider">
-                        <!-- Row 1 / Title -->
+                        <!-- Title 1 -->
                         <tr class="align-middle">
                             <!-- scope = "row" specifies that the header cell is the header for a row-->
                             <td colspan="3">
-                                <h3 class="howTo">To Set Up Each Trial</h3>
+                                <h3 class="howTo roboto">To Set Up Each Trial</h3>
                             </td>
                         </tr>
                         <!-- Row 1 -->
@@ -99,7 +101,8 @@
                                 <h3 class="howTo">Take six 50mL tubes and add 10mL algae solution, 15-25 duckweed
                                     fronds, and/or 5mL of glyphosate solution according to the diagram.</h3>
                             </td>
-                            <td class="text-center"><img src="img/diagram.png" alt="Diagram of vials" width="400px">
+                            <td class="text-center"><img src="img/diagram.png" alt="Diagram of vials" width="800px"
+                                    class="img-fluid">
                             </td>
 
                         </tr>
@@ -115,7 +118,7 @@
                             </td>
                             <td class="text-center"><img src="img/lights.png"
                                     alt="Oslo 2' LED High Output Replacement Fixtures with Magnetic Clips, made from Intertek"
-                                    width="350px"></td>
+                                    width="400px" class="img-fluid"></td>
 
                         </tr>
                         <!--Row 3-->
@@ -125,31 +128,64 @@
                                 <h3>3</h3>
                             </th>
                             <td>
-                                <h3 class="howTo">On the first day of experimentation (immediately after creating the
-                                    tubes) complete first day of data collection, then do the second data collection on day 3,
-                                    and on day 5, do the final day of data collection.
+                                <h3 class="howTo">Complete first data collection immediately after making the tubes,
+                                    second data collection on day 3,
+                                    and third data collection on day 5.
                                 </h3>
                             </td>
-                            <td class="text-center"><img src="img/lights.png"
-                                    alt="Oslo 2' LED High Output Replacement Fixtures with Magnetic Clips, made from Intertek"
-                                    width="350px"></td>
+                            <td class="text-center"><img src="img/6-tubes.png" alt="Tubes Underneath the Grow Lights"
+                                    width="400px" class="img-fluid"></td>
 
                         </tr>
 
-                        <!--Row 4-->
+                        <!-- Title 2 -->
+                        <tr class="align-middle">
+                            <td colspan="3">
+                                <h3 class="howTo">To Collect Algae Cell Data</h3>
+                            </td>
+
+                        </tr>
+
+                        <!-- Row 1 -->
+                        <tr class="align-middle">
+                            <!-- scope = "row" specifies that the header cell is the header for a row-->
+                            <th scope="row" class="table-secondary">
+                                <h3>1</h3>
+                            </th>
+                            <td>
+                                <h3 class="howTo">Shake the tube to disperse the algae cells, then place a drop on the
+                                    hemocytometer with a pipette. Cover with a cover slip.</h3>
+                            </td>
+                            <td class="text-center"><img src="img/pipette.png" alt="Using a Pipette with Hemocytometer"
+                                    width="400px" class="img-fluid"></td>
+
+                        </tr>
+                        <!-- Row 2 -->
+                        <tr class="align-middle">
+                            <!-- scope = "row" specifies that the header cell is the header for a row-->
+                            <th scope="row" class="table-secondary">
+                                <h3>2</h3>
+                            </th>
+                            <td>
+                                <h3 class="howTo">Place under the microscope and adjust settings so the algae cells are
+                                    clearly visible.</h3>
+                            </td>
+                            <td class="text-center"><img src="img/microscope.png"
+                                    alt="HemocytometerUnder the Microscope" width="400px" class="img-fluid"></td>
+                        </tr>
+
+                        <!-- Row 3 -->
                         <tr class="align-middle">
                             <!-- scope = "row" specifies that the header cell is the header for a row-->
                             <th scope="row" class="table-secondary">
                                 <h3>3</h3>
                             </th>
                             <td>
-                                <h3 class="howTo">After data collection on day 
-                                </h3>
+                                <h3 class="howTo">Record the number of algae cells in each corner quadrant and then find
+                                    the average number between them.</h3>
                             </td>
-                            <td class="text-center"><img src="img/lights.png"
-                                    alt="Oslo 2' LED High Output Replacement Fixtures with Magnetic Clips, made from Intertek"
-                                    width="350px"></td>
-
+                            <td class="text-center"><img src="img/counting cells.png"
+                                    alt="Algae Cells Under the Microscope" width="400px" class="img-fluid"></td>
                         </tr>
 
                         <!-- Row 4 -->
@@ -159,21 +195,43 @@
                                 <h3>4</h3>
                             </th>
                             <td>
-                                <h3 class="howTo">Arduino and Flask server communicate via HTTP request protocol</h3>
+                                <h3 class="howTo">Repeat for each of the 4 tubes containing algae cells.</h3>
                             </td>
-                            <td class="text-center"><img src="img/arduino-logo.png" alt="Arduino Logo"></td>
-
+                            <td class="text-center"><img src="img/4-tubes.png" alt="4 Tubes with Algae Cells"
+                                    width="400px" class="img-fluid"></td>
                         </tr>
-                        <!-- Row 5 -->
+
+                        <!-- Title 3 -->
+                        <tr class="align-middle">
+                            <td colspan="3">
+                                <h3 class="howTo">To Collect Duckweed Frond Data</h3>
+                            </td>
+                        </tr>
+                        <!-- Row 1 -->
                         <tr class="align-middle">
                             <!-- scope = "row" specifies that the header cell is the header for a row-->
                             <th scope="row" class="table-secondary">
-                                <h3>5</h3>
+                                <h3>1</h3>
                             </th>
                             <td>
-                                <h3 class="howTo">Flask connects to Firebase and sends data for storages</h3>
+                                <h3 class="howTo">Count the number of duckweed fronds in each tube and record.</h3>
                             </td>
-                            <td class="text-center"><img src="img/firebase-logo.png" alt="Firebase Logo"></td>
+                            <td class="text-center"><img src="img/counting.png" alt="Duckweed Fronds in a Tube"
+                                    width="400px" class="img-fluid"></td>
+                        </tr>
+
+                        <!-- Row 2 -->
+                        <tr class="align-middle">
+                            <!-- scope = "row" specifies that the header cell is the header for a row-->
+                            <th scope="row" class="table-secondary">
+                                <h3>2</h3>
+                            </th>
+                            <td>
+                                <h3 class="howTo">Take a picture of the 4 tubes next to each other and record any
+                                    differences.</h3>
+                            </td>
+                            <td class="text-center"><img src="img/next-to.png" alt="4 Duckweed Tubes Next to Each Other"
+                                    width="400px" class="img-fluid"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -183,7 +241,7 @@
         <!--Footer-->
         <footer class="p-5 footer text-light text-center position-relative">
             <div class="container">
-                <p class="lead">Coperright &copy; SE 2026 Bootstrap Demo</p>
+                <p class="lead">Copyright &copy; SE 2026 Bootstrap Demo</p>
                 <a href="#" class="position-absolute bottom-0 end-0 p-5">
                     <i class="bi bi-arrow-up-circle h2 icon-white"></i>
                 </a>
