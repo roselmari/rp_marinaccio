@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2.1.5 Class Demo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.6.1/dist/chart.umd.min.js"></script>
+    <script src="js/linechart.js" defer></script>
+
+</head>
+
+<body class="body">
+    <div class="container-lg min-vh-100">
+        <section class="light-green-background">
+        <header>
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg nav-background-color" data-bs-theme="dark">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand"> <!--Website Brand-->
+                        <img src="img/diff-algae-cell.webp" alt="Algae Cell Logo" class="d-inline-block align-text-top"
+                            height=50px>
+                    </a>
+
+                    <!--Hamburger Menu Button-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--Collapsible navbar menu with custom hover underline CSS animation-->
+                    <div class="collapse navbar-collapse" id="navmenu"> <!--Links to Hamburger icon-->
+                        <ul class="navbar-nav ms-auto"> <!--ms-auto provides automatic margin spacing-->
+                            <li class="nav-menu-item">
+                                <a href="authors.html"
+                                    class="nav-link hover-underline-animation nav-menu-item">Authors</a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="procedure.html"
+                                    class="nav-link hover-underline-animation nav-menu-item">Procedure</a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="results.html"
+                                    class="nav-link hover-underline-animation nav-menu-item">Results</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <br>
+        <div class="text-center about-team roboto">
+            <h1>Results</h1>
+        </div>
+        <hr>
+        <section class="chartJS-sample">
+            <div class="container d-flex oveflow-hidden bg-light rounded-4" id="chart-wrapper">
+                <canvas id="lineChart"></canvas>
+            </div>
+        </section>
+        </section>
+
+        <!--Footer-->
+        <footer class="p-5 footer text-light text-center position-relative">
+            <div class="container">
+                <p class="lead">Copyright &copy; SE 2026 Bootstrap Demo</p>
+                <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                    <i class="bi bi-arrow-up-circle h2 icon-white"></i>
+                </a>
+            </div>
+
+        </footer>
+
+        </div>
+</body>
+
+</html>
