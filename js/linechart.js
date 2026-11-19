@@ -169,4 +169,4 @@ async function createChart(location) {
 
     }
 
-    createChart('../data/researchData.csv');
+    createChart('./data/researchData.csv');
